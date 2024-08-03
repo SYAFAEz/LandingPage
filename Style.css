@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+  --rf-brand: #fb8d19;
+  --rf-brand-rgb: 251, 141, 25;
+  --rf-dark: #212237;
+  --rf-body: #989898;
+  --f-main: "raleway", sans-serif;
+  --transition: all 0.6s cubic-bezier(0.165, 0.85, 0.44, 1);
+  --shadow: 0px, 15px, 30px, rgba(0, 0, 0, 0 1);
+}
+
+body {
+  font-family: var(--f-main);
+  color: var(--rf-dark);
+  line-height: 1.8;
+}
+
+h1,
+.h1 h2,
+.h2 h3,
+.h3 h4,
+.h4 h5,
+.h5 h6,
+.h6 {
+  font-weight: 700;
+  color: black;
+  font-family: var(--f-main);
+}
+
+.text-brand {
+  color: var(--rf-brand);
+}
+
+.navbar {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navbar.scrolled {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+#home {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+}
+
+.visitor {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.viteks {
+  position: relative;
+  top: 15px;
+}
+
+
+.section-padding {
+  padding-top: 120px;
+  padding-bottom: 120;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  max-width: 550px;
+  margin: 0 auto 60px auto;
+}
+
+.section-title .line {
+  width: 60px;
+  height: 2px;
+  background-color: var(--rf-brand);
+  display: inline-block;
+}
+
+.btn-brand {
+  background-color: var(--rf-brand);
+}
+
+.about-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--rf-brand);
+  color: white;
+  font-size: 27px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-icon {
+  width: 155px;
+  height: 155px;
+  background-color: var(--rf-brand);
+  color: white;
+  font-size: 27px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu {
+  position: relative;
+}
+
+.edu::before {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: rgba(var(--rf-brand-rgb), 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.edu::after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: var(--rf-brand);
+  position: absolute;
+  left: -7px;
+  top: 0;
+}
+
+#contact .form-control {
+  border-radius: 0;
+}
+
+#contact .form-control:focus {
+  box-shadow: none;
+  border-color: var(--rf-brand);
+}
+
+#contact input.form-control {
+  height: 40px;
+}
+
+.NoHp {
+  font-family: Arial;
+}
+
+.last {
+  padding-bottom: 120px;
+}
+
+.site-footer {
+  background-color: #212237;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin: 5px 0;
+}
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-section ul li a:hover {
+  color: #aaa;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+.social-media li {
+  margin: 0 10px;
+}
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+}
